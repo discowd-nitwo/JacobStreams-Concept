@@ -1,0 +1,139 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-image: url('imgs/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.pfp {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.TitleText {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.UnderTitleText {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: rgb(210, 208, 208);
+  font-size: 17px;
+
+  position: absolute;
+  top: 29.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+hr.divider-top {
+  border-top: 3px solid #bbb;
+  width: 400px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+hr.divider-bottom {
+  border-top: 3px solid #bbb;
+  width: 400px;
+  position: absolute;
+  top: 60%; /* adjust this */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button-container {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 400px;
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+
+  /* translucent blur effect */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  /* white outline */
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+
+  /* text */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.link-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.link-button img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.button-container {
+  /* keep everything you already have, add: */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.button-row {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.link-button.full {
+  width: 100%;
+}
+
+.link-button.half {
+  flex: 1; /* each takes up equal half of the row */
+}
